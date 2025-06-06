@@ -6,4 +6,11 @@ route.get('/', (req, res) => {
     })
 })
 
+const incomeRoutes = require('./income');
+const expenseRoutes = require('./expense');
+
+route.get('/incomes', incomeRoutes)
+route.get('/expenses', expenseRoutes)
+
+
 module.exports = route;
