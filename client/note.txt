@@ -1,0 +1,11 @@
+1. Hapus submodule sepenuhnya
+git rm --cached client
+rm -rf .git/modules/client
+rm -rf client/.git
+
+2. Tambahkan ulang folder client sebagai folder biasa
+git add client
+git commit -m "fix: remove submodule, re-add client as normal folder"
+
+3. Push ke GitHub
+git push
